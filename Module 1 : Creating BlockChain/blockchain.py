@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar 24 01:01:30 2020
-
 @author: aryan
 """
 import datetime
@@ -26,6 +24,13 @@ class BlockChain:
         self.chain.append(block)
         return block 
     def get_previous_block(self):
-        return self.chain[-1]
+        return self.chain[-1] 
+    
+    def proof_of_work(self, previous_proof): # it is a piece of data where minors have to in oreder to mine a new block here function takes two argument self and previuos 
+    #proof which is element of problem to be solved by minors
+        new_proof = 1                        # here we will define a problem which minors have to solve and mine inside the block
+        check_proof = False                  #here it will check if the new proof is the right proof
+        while check_proof is False:          #here the wile loop will work unless the checkproof becomes true
+            hash_operation = str(hashlib.sha256(new_proof**2 - previous_proof**2).encode())   # here this is the operation for finding the value by solving this         #here this will be a string of 64 character it will take new proof and checkproof
 
 # Part 2 - Mining our Blockchain
