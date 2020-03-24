@@ -15,7 +15,7 @@ class BlockChain:
         self.chain = [] #it is a list where we will append diffrent blocks that will be mined
         
         self.create_block(proof = 1, previous_hash = '0' ) #genesis block created by create block with proof 1 and prevous hash 0 
-    
+        #creating the genesis block 
     def create_block(self, proof, previous_hash):#here previous hash is the key element that links two blocks in a row here we will take proof as this is what our create block function will give us
         block = {'index': len(self.chain)+1,
                  'timestamp': str(datetime.datetime.now()),#to check at what date and time the changes where made
@@ -90,8 +90,11 @@ def mine_block():#this function will mine a block
 def get_chain():
     response = {'chain': blockchain.chain,
                 'length': len(blockchain.chain)} 
+    return jsonify(response), 200
     
-    
+# Running the app by flask app
+
+app.run(host = '0.0.0.0' port = 5000)   #here we will add host and port 
 
     
     
