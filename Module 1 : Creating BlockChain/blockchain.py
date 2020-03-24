@@ -23,7 +23,7 @@ class BlockChain:
                  'previous_hash': previous_hash,}
         self.chain.append(block)
         return block 
-    def get_previous_block(self):
+    def get_previous_block(self): #here this will get us the previous proof of the blockchain
         return self.chain[-1] 
     
     def proof_of_work(self, previous_proof): # it is a piece of data where minors have to in oreder to mine a new block here function takes two argument self and previuos 
@@ -58,5 +58,57 @@ class BlockChain:
                 return False 
             previous_block = block
             block_index += 1
-        return True
+        return True 
 # Part 2 - Mining our Blockchain
+
+
+#creating a web app
+app = Flask(__name__)
+
+#creating a blockchain
+blockchain  = Blockchain() 
+
+
+#Mining a new block 
+@app.route('/mine_block', methods = ['GET'])
+def mine_block(): 
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
