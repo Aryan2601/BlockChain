@@ -13,13 +13,13 @@
 
 ### A blockchain is a continuosly growing list of records,called blocks,which are linked and secured using cryptography.
 
-##Genesis Block
+## Genesis Block
 
 ### A blockchain consists of Genesis Block which is the first block in a block chain it does not consists of Previous hash as it is the first block it contains hash.
 
 ![Screenshot from 2020-03-31 20-33-45](https://user-images.githubusercontent.com/56226813/78042021-1a7ae280-738f-11ea-977a-ca7d198f4ac5.png)
 
-### What Does a Block constitues of :
+## What Does a Block constitues of :
 
 ![Screenshot from 2020-03-31 20-14-37](https://user-images.githubusercontent.com/56226813/78039971-69734880-738c-11ea-87f5-79267fa6753a.png)
 
