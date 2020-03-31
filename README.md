@@ -7,6 +7,8 @@
 
 The concept of Blockchain came from Stuart Haber and W.scott Stornetta.
 
+![Screenshot from 2020-03-31 20-18-58](https://user-images.githubusercontent.com/56226813/78040355-f1595280-738c-11ea-801d-2d21f5af090b.png)                    ![Screenshot from 2020-03-31 20-19-05](https://user-images.githubusercontent.com/56226813/78040365-f5857000-738c-11ea-8ae9-b63305c4e48b.png)
+
 ### Defnition
 
 A blockchain is a continuosly growing list of records,called blocks,which are linked and secured using cryptography.
